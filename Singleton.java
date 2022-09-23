@@ -41,17 +41,4 @@ public class Singleton {
     public void setNumberOfUsers(int nU) {
         numberOfUsers = nU;
     }
-    public static void main (String[] args) {
-        Singleton obj1 = Singleton.getInstance();
-        System.out.println(obj1);
-        System.out.println(obj1.getFilename());
-        System.out.println(obj1.getNumberOfUsers());
-        System.out.println(obj1.soundIsOn());
-        obj1.setSoundOn();
-        System.out.println(obj1.soundIsOn());
-        obj1.setFileName("newfile.dat");
-        System.out.println(obj1.getFilename());
-        obj1.setNumberOfUsers(23);
-        System.out.println(obj1.getNumberOfUsers());
-    }
 }
