@@ -1,16 +1,16 @@
-public class Singleton {
+public class RunTimeParameters {
 
-    private static Singleton instance;
+    private static RunTimeParameters instance;
     private String fileName = "CFile.dat";
     private int numberOfUsers = 27;
     private boolean soundOn = false;
 
-    private Singleton () {
+    private RunTimeParameters() {
     }
 
-    public static Singleton getInstance() {
+    public static RunTimeParameters getInstance() {
         if (instance == null) {
-            instance = new Singleton();
+            instance = new RunTimeParameters();
         }
         return instance;
     }

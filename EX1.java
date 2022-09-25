@@ -1,6 +1,6 @@
 public class EX1 {
     public static void main (String[] args) {
-        Singleton obj1 = Singleton.getInstance();
+        RunTimeParameters obj1 = RunTimeParameters.getInstance();
         System.out.println("Initial Values: ");
         System.out.println("File name = " + obj1.getFilename());
         System.out.println("Number of users = " + obj1.getNumberOfUsers());
